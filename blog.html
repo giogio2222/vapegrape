@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VapeGrape Blog - Tips & Guides</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">VAPE<span>GRAPE</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Product</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header & Search -->
+    <section style="background: var(--light-grey); padding: 150px 0 60px; text-align: center;">
+        <div class="container" data-aos="fade-up">
+            <h1 style="font-size: 3.5rem; font-weight: 800; margin-bottom: 20px;">VAPEGRAPE <span>BLOG</span></h1>
+            <p style="color: #666; max-width: 600px; margin: 0 auto; margin-bottom: 40px;">Wawasan terbaru seputar dunia
+                vaping dan CBD organik.</p>
+
+            <div style="max-width: 600px; margin: 0 auto; position: relative;">
+                <input type="text" id="blogSearch" placeholder="Cari judul artikel..."
+                    style="width: 100%; padding: 20px 30px; border-radius: 50px; border: 1px solid #ddd; font-size: 1rem; outline: none; transition: var(--transition);">
+                <button
+                    style="position: absolute; right: 10px; top: 10px; bottom: 10px; background: var(--primary); color: var(--white); border: none; padding: 0 25px; border-radius: 40px; cursor: pointer;">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-grid">
+        <div class="container">
+            <div id="articlesContainer"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+                <!-- Article 1 -->
+                <article class="blog-card"
+                    style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);"
+                    data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1553444474-0f2c41935678?auto=format&fit=crop&q=80&w=600"
+                        alt="Vape Benefits" style="width: 100%; height: 220px; object-fit: cover;">
+                    <div style="padding: 25px;">
+                        <span style="color: var(--primary); font-weight: 600; font-size: 0.9rem;">Wellness</span>
+                        <h3 style="margin: 10px 0 15px;"><a href="manfaat-vaping-organik.html"
+                                style="text-decoration: none; color: var(--dark);">5 Manfaat Vaping Organik untuk Gaya
+                                Hidup Sehat</a></h3>
+                        <p style="color: #666; font-size: 0.95rem; margin-bottom: 20px;">Pelajari bagaimana liquid
+                            organik dari VapeGrape dapat membantu transisi gaya hidup Anda menjadi lebih bersih...</p>
+                        <a href="manfaat-vaping-organik.html"
+                            style="color: var(--primary); font-weight: 700; text-decoration: none; display: flex; align-items: center; gap: 5px;">Baca
+                            Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="blog-card"
+                    style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1615485496811-309d944d6738?auto=format&fit=crop&q=80&w=600"
+                        alt="CBD Quality" style="width: 100%; height: 220px; object-fit: cover;">
+                    <div style="padding: 25px;">
+                        <span style="color: var(--primary); font-weight: 600; font-size: 0.9rem;">Education</span>
+                        <h3 style="margin: 10px 0 15px;"><a href="cara-pilih-liquid-kualitas-tinggi.html"
+                                style="text-decoration: none; color: var(--dark);">Cara Memilih Liquid Vape Kualitas
+                                Tinggi & Aman</a></h3>
+                        <p style="color: #666; font-size: 0.95rem; margin-bottom: 20px;">Jangan asal pilih! Inilah
+                            panduan lengkap mengecek sertifikasi dan kandungan liquid vape sebelum membeli...</p>
+                        <a href="cara-pilih-liquid-kualitas-tinggi.html"
+                            style="color: var(--primary); font-weight: 700; text-decoration: none; display: flex; align-items: center; gap: 5px;">Baca
+                            Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="blog-card"
+                    style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1598885511440-218157827405?auto=format&fit=crop&q=80&w=600"
+                        alt="Vape Care" style="width: 100%; height: 220px; object-fit: cover;">
+                    <div style="padding: 25px;">
+                        <span style="color: var(--primary); font-weight: 600; font-size: 0.9rem;">Guide</span>
+                        <h3 style="margin: 10px 0 15px;"><a href="panduan-perawatan-vape-pemula.html"
+                                style="text-decoration: none; color: var(--dark);">Panduan Perawatan Vape untuk Pemula
+                                Agar Awet</a></h3>
+                        <p style="color: #666; font-size: 0.95rem; margin-bottom: 20px;">Ingin device vape Anda bertahan
+                            bertahun-tahun? Ikuti tips pembersihan dan perawatan rutin yang simpel ini...</p>
+                        <a href="panduan-perawatan-vape-pemula.html"
+                            style="color: var(--primary); font-weight: 700; text-decoration: none; display: flex; align-items: center; gap: 5px;">Baca
+                            Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div style="display: flex; justify-content: center; gap: 15px; margin-top: 60px;">
+                <a href="#" class="btn btn-dark"
+                    style="padding: 10px 25px; opacity: 0.5; pointer-events: none;">Prev</a>
+                <a href="#" class="btn btn-primary" style="padding: 10px 25px;">Next</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA WhatsApp -->
+    <div class="container">
+        <section class="cta-section" data-aos="zoom-in">
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Butuh Bantuan?</h2>
+            <p style="margin-bottom: 30px; font-size: 1.1rem; opacity: 0.9;">Tanyakan seputar produk atau konsultasi
+                gratis melalui WhatsApp.</p>
+            <a href="https://wa.me/628123456789" class="btn btn-dark"
+                style="background: #fff; color: var(--primary); font-size: 1.2rem; display: inline-flex; align-items: center; gap: 10px;">
+                <i class="fab fa-whatsapp"></i> Chat Admin
+            </a>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo" style="color: var(--white);">VAPE<span>GRAPE</span></a>
+                    <p>Premium vaping and CBD products for your wellness journey. Crafted with care and science-backed
+                        precision.</p>
+                    <div style="display: flex; gap: 15px; margin-top: 25px;">
+                        <a href="#" style="color: var(--white); font-size: 1.2rem;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: var(--white); font-size: 1.2rem;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: var(--white); font-size: 1.2rem;"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Product</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 VapeGrape. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <div class="sticky-widgets">
+        <a href="#" class="widget-btn back-to-top" title="Back to Top"><i class="fas fa-chevron-up"></i></a>
+        <a href="https://wa.me/628123456789" class="widget-btn whatsapp-btn" target="_blank" title="Chat WhatsApp"><i
+                class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Simple client-side search logic
+        document.getElementById('blogSearch').addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase();
+            const cards = document.querySelectorAll('.blog-card');
+            cards.forEach(card => {
+                const title = card.querySelector('h3').innerText.toLowerCase();
+                if (title.includes(term)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
