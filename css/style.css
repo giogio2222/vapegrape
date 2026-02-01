@@ -15,11 +15,31 @@
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+/* Global Typography */
+h1 {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: clamp(2rem, 6vw, 2.8rem);
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+p {
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
+    overflow-wrap: break-word;
 }
 
 html {
@@ -54,14 +74,19 @@ body {
 }
 
 section {
-    padding: 100px 0;
+    padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
 }
 
 .section-title {
     text-align: center;
-    font-size: 3rem;
     font-weight: 800;
-    margin-bottom: 50px;
+    margin-bottom: clamp(30px, 5vw, 50px);
     text-transform: uppercase;
 }
 
@@ -159,11 +184,11 @@ nav.scrolled {
 /* Sticky Socials/Top */
 .sticky-widgets {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 20px;
+    right: 20px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
     z-index: 999;
 }
 
@@ -313,10 +338,6 @@ footer {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
-
-    .section-title {
-        font-size: 2.2rem;
-    }
 }
 
 /* Navbar Mobile Styles */
@@ -336,7 +357,7 @@ footer {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 70%;
+        width: 80%;
         height: 100vh;
         background: var(--white);
         flex-direction: column;
@@ -352,11 +373,27 @@ footer {
     }
 
     .nav-links li {
-        margin: 20px 0;
+        margin: 15px 0;
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        margin-top: 15px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-info p {
+        max-width: 100%;
     }
 }
 
